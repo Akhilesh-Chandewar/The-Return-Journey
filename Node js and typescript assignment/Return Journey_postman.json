@@ -1,0 +1,121 @@
+{
+    "info": {
+        "_postman_id": "2f195770-dae8-4ef4-bf75-4cd300a1b1f7",
+        "name": "Return Journey",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Get Products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8888/product/get-products",
+                    "path": [
+                        "product",
+                        "get-products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8888"
+                }
+            }
+        },
+        {
+            "name": "Get Product Details",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8888/product/get-product-details/aa234f21-6551-482b-8d6e-cd475d0ff6a7",
+                    "path": [
+                        "product",
+                        "get-product-details",
+                        "aa234f21-6551-482b-8d6e-cd475d0ff6a7"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8888"
+                }
+            }
+        },
+        {
+            "name": "Create Product",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8888/product/create-product",
+                    "path": [
+                        "product",
+                        "create-product"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8888"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\" : \"product 1 name\",\n  \"description\": \"product 1 description\",\n  \"price\": \"100\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Delete Product",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8888/product/delete-product/3cf3285c-db18-4c51-83a1-af7a59275e7b",
+                    "path": [
+                        "product",
+                        "delete-product",
+                        "3cf3285c-db18-4c51-83a1-af7a59275e7b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8888"
+                }
+            }
+        },
+        {
+            "name": "Update Product",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8888/product/update-product/3cf3285c-db18-4c51-83a1-af7a59275e7b",
+                    "path": [
+                        "product",
+                        "update-product",
+                        "3cf3285c-db18-4c51-83a1-af7a59275e7b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8888"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"description\": \"product 6666 description\",\n  \"price\": \"100\"\n}"
+                }
+            }
+        }
+    ]
+}
